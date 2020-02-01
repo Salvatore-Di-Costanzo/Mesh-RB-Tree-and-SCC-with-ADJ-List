@@ -124,7 +124,6 @@ void Graph::DFS ()
     {
         adj->at(i)->setColor(Bianco);
         adj->at(i)->setP(nullptr);
-        adj->at(i)->setD(Bianco);
     }
 
     ///Eseguo una visita DFS passando anche lo stack per riempirlo
@@ -161,7 +160,7 @@ void Graph::DFS ()
             }
             DFS_Visit2(v,g);
         }
-        ///Aggiungiamo il nodo che è fortemente connesso al grafo SCC
+        ///Aggiungiamo il nodo che Ã¨ fortemente connesso al grafo SCC
         SCC.addNode(v);
     }
     ///Apriamo il file di output
